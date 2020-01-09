@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background: 
+    linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5)),
+    url("../img/header.jpg");
+    min-height: 700px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.navigation{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 90px;
+    background: 
+    linear-gradient(rgba(20,20,20, .2), 
+    rgba(20,20,20, .2));
+}
+
+.navigation h2{
+    margin: auto;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.navigation .first{
+    color: #f9bf3b;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.navigation ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+/*
+.navigation nav{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+*/
+
+.navigation ul li a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 25px;
+}
+
+.navigation ul li .active{
+    color: #f9bf3b;
+}
+
+.text{
+    text-align: center;
+    margin-top: 10%;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.text h1{
+    text-transform: uppercase;
+    font-size: 60px;
+}
+
+.text h1 span{
+    color: #f9bf3b;
+}
+
+.text p{
+    font-size: 18px;
+}
+
+.text .button{
+    margin-top: 10%;
+}
+
+.text .button a{
+    color: white;
+    text-decoration: none;
+    padding: 16px 15px;
+    border: 2px solid white;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.text .button a:hover{
+    background: #f9c03b83;
+}
+
+article{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    grid-auto-rows: minmax(500px, auto);
+}
+
+article div img{
+    width: 90%;
+}
+
+article div h2{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+article div p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+article div a{
+    text-decoration: none;
+    color: #f9bf3b;
+    padding: 10px 10px;
+    border: 1px solid #f9bf3b;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition:all 1s;
+    margin-bottom: 30px;
+}
+
+article div a:hover{
+    border: 1px solid #e7a711;
+    color: #000000;
+}
+
+.numbers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background: 
+    linear-gradient(
+                     rgba(20, 20, 20, 0.9), 
+                     rgba(29, 29, 29, 0.9)),
+    url("../img/numbers.jpeg");
+    background-position: center;
+    background-position: center center;
+    min-height: 300px;
+}
+
+.numbers .text{
+    margin: auto 20px;
+    text-align: left;
+}
+
+.numbers .text h2{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.numbers .text p{
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.numbers div{
+    margin: auto;
+    color: white;
+}
+
+.numbers span{
+    color: rgb(91, 91, 228);
+}
+
+.numbers h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.numbers .advisors{
+    padding: 0px 25%;
+    border-left: 1px solid rgb(184, 184, 184);
+    border-right: 1px solid rgb(184, 184, 184);
+}
+
+
+
+
+@media only screen and (max-width: 890px){
+    .navigation{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    article {
+        grid-template-columns: 1fr 1fr;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .box3 {
+        position: relative;
+        left: 50%;
+    }    
+}
+
+@media only screen and (max-width: 660px) {
+    .navigation {
+        grid-template-columns: 1fr;
+        grid-template-rows: 90px 1fr;
+    }
+    
+    header .logo{
+        font-size: 40px;
+        justify-content:center;
+    }
+
+    header .text h1{
+        font-size: 40px
+    }
+    
+    .navigation ul {
+        display: block;
+        margin: auto;
+        width: 80%;
+        text-align: center;
+    }
+    .navigation li{
+        padding: 10px;
+        border-top: 1px solid rgba(184, 184, 184, 0.1);
+    }
+   
+    article{
+        grid-template-columns: 1fr;
+    }
+
+    article .box3{
+        left: 0;
+    }
+
+    .numbers{
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 150px 150px 150px;
+        grid-gap: 10px;
+    }
+
+    .numbers .text{
+        text-align: center;
+        margin: 20px;
+    }
+
+    .numbers .advisors {
+        border-left: none;
+        border-right: none;
+        padding: 0;
+    }
+}

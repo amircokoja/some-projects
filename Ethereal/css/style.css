@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Muli', sans-serif;
+}
+
+.container{
+    width: 80%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.header{
+    height: 800px;
+    background: url("../img/header-image.jpg") no-repeat;
+    background-size: auto;
+    background-position: center;
+}
+
+.navigation{
+    height: 80px;
+    position: relative;
+    top: 20px;
+}
+
+ul{
+    overflow: hidden;
+    list-style-type: none;
+}
+
+.nav-bar{
+    float: left;
+    position: relative;
+    top: 30px;
+}
+
+.nav-bar li{
+    float: left;
+}
+
+.nav-bar li a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    letter-spacing: 1px;
+    transition: color 1s;
+}
+
+.nav-bar li a:hover{
+    color: #d35656;
+}
+
+.header .header-logo img{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    left: 46.5%;
+}
+
+.header .social-media{
+    float: right;
+    position: relative;
+    top: 25px;
+}
+
+.header .social-media img{
+    height: 15px;
+    margin: 5px;
+    width: 18px;
+    padding: 8px;
+    box-shadow: 0px 0px 0px 1px rgb(255, 255, 255);
+    border-radius: 100px;
+    opacity: 0.8;
+    position: relative;
+    right: 10px;
+    transition: box-shadow 0.5s;
+}
+
+.header .social-media img:hover{
+    box-shadow: 0px 0px 0px 1px #d35656;
+}
+
+.header-text{
+    height: 600px;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    color: white;
+}
+
+.header-text .title{
+    text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: 3px;
+}
+
+.header-text .convince{ 
+    color:#e05c43;
+}
+
+.header .title-description{
+    position: relative;
+    top: 30px;
+    line-height: 2;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.header .button-learn-more{
+    position: relative;
+    top: 120px;
+    width: 100px;
+    margin: auto;
+    border: 1.5px solid white;
+    border-radius: 20px;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    font-size: 12px;
+    transition: border-color 1s, color 1s;
+}
+
+.header .button-learn-more:hover{
+    color: #d35656;
+    border-color: #d35656;
+}
+
+/* Boxes */
+
+
+.box{
+    float: left;
+    width: 345px;
+    height: 500px;
+    margin:30px;
+    text-align: center;
+}
+
+.box img{
+    position: relative;
+    top:60px;
+}
+
+.box h3{
+    position: relative;    
+    top: 80px;
+    opacity: 0.8;
+    letter-spacing: 1px;
+}
+
+.box p{
+    position: relative;
+    top: 100px;
+    line-height: 1.5;
+    color: rgb(124, 124, 124);
+    letter-spacing: 1px;
+}
+
+.box .button-box{
+    position: relative;
+    top: 180px;
+    border: 1.5px solid #d35656;
+    border-radius: 20px;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    font-size: 12px;
+    color: #d35656;
+    transition: border-color .5s, color .5s;
+    width: 100px;
+    margin: auto;
+}
+
+.box .button-box:hover{
+    color: #ffc7c7;
+    border-color: #ffc7c7;
+}
+
+.fixed .button-box{
+    position: relative;
+    top: 204px;
+}
+
+/* part-three */
+.left-side{
+    width: 50%;
+    float: left;
+    background: #d35656;
+    height: 800px;
+    color: white;
+}
+
+.left-side .left-text{
+    width: 50%;
+    margin: auto;
+    position: relative;
+    top: 70px;
+}
+
+.left-side img{
+    float: left;
+    margin: 10px;
+}
+
+.left-side .text{
+    padding-bottom: 50px;
+}
+
+.left-side .text p{
+    padding: 20px;
+}
+
+
+.left-side .text h3{
+    padding: 8px;
+}
+
+.part-three .button-read-more{
+    width: 100px;
+    border: 1.5px solid white;
+    border-radius: 20px;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    font-size: 12px;
+    transition: opacity .5s;
+    text-align: center;
+}
+
+.part-three .button-read-more:hover{
+    opacity: 0.5;
+}
+
+.right-side{
+    width: 50%;
+    height: 800px;
+    float: right;
+    background: url("../img/part-3-back.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.right-side .heading{
+    margin: 50px;
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    opacity: 0.7;
+}
+
+.right-side img{
+    height: 400px;
+    width: 400px;
+    position: relative;
+    top: 30px;
+}
+
+
